@@ -31,6 +31,9 @@
     NSURLRequest* request = [NSURLRequest requestWithURL:url];//创建NSURLRequest
     [_webview loadRequest:request];//加载
     
+    self.webview.delegate = self;
+
+    
 }
 
 #pragma mark - UIWebViewDelegate
